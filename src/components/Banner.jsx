@@ -13,7 +13,7 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
   const period = 2000;
-  const [letterClass,setlettrClass]=useState('text-animate')
+  const [letterClass,setLettrClass]=useState('text-animate')
   const nameArray=['','R','o','b','e','l',]
   // const jobArray=['W','e','b','d','e','v','e','l','e','R','W','e','b', '','D','e','s','i','g','n','e','r']
   useEffect(() => {
@@ -23,7 +23,11 @@ export const Banner = () => {
 
     return () => { clearInterval(ticker) };
   }, [text])
-
+useEffect(()=>{
+   setTimeout(()=>{
+    setLettrClass('text-animate-hover')
+  },4000)
+},[])
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
@@ -40,7 +44,7 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
+      setIsDeleting(false); 
       setLoopNum(loopNum + 1);
       setIndex(1);
       setDelta(500);
