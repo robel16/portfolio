@@ -1,8 +1,17 @@
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+import { useEffect, useState } from 'react'
 
 const SkillAnimated=()=> {
+    const [letterClass,setLettrClass]=useState('text-animate')
+    useEffect(()=>{
+        setTimeout(()=>{
+         setLettrClass('text-animate-hover')
+       },4000)
+     },[])
+
+   
   return (
     <div className='stage-cube-cont'>
         <div className='cubespinner'>

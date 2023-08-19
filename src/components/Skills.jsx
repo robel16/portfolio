@@ -55,7 +55,7 @@ useEffect(()=>{
                                 <h5>Web Development</h5>
                             </div>
                             <div className="item">
-                                <SkillAnimated/>
+                                
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />

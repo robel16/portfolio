@@ -6,6 +6,7 @@ import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
+import SkillAnimated from './components/SkillAnimated/SkillAnimated';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
-     
+     <SkillAnimated/>
     </div>
   );
 }
