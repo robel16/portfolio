@@ -1,9 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg1 from "../assets/img/netflix.webp";
+import projImg2 from "../assets/img/applicant-tracking-system-prismATS.webp";
+import projImg3 from "../assets/img/face-recognition-attendance-system.webp";
+import projImg4 from "../assets/img/letters-gh-guest-house-logo-design-concept-vector-23326459.jpg";
+import colorSharp2 from "../assets/img/letters-gh-guest-house-logo-design-concept-vector-23326459.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { useEffect, useState } from "react";
@@ -20,35 +21,26 @@ useEffect(()=>{
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Netflix",
+      description: "netflix clone",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Applicant Tracking System",
+      description: "An applicant tracking system simplifies most of the modern recruiting process for TA teams by using automated intelligence to screen for the best, most qualified ",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Face Recognition Attendance system",
+      description: "Facial recognition attendance system is a biometric identification method that uses a face-scanning mechanism to record attendance from everyone present in an organization. ",
       imgUrl: projImg3,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: projImg4,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+    
   ];
 
   return (
