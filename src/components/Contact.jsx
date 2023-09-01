@@ -9,7 +9,7 @@ export const Contact = () => {
     firstName: "",
     lastName: "",
     email: "",
-    phone: "",
+    
     message: ""
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
