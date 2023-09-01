@@ -9,7 +9,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { useEffect, useState } from "react";
 import AnimatedLetters from "./AnimatedLetters/Animated";
-
+import { Hourglass } from  'react-loader-spinner'
 export const Projects = () => {
   const [letterClass,setLettrClass]=useState('text-animate')
   const nameArray=['','P','r','o','j','e','t','s']
@@ -24,25 +24,32 @@ useEffect(()=>{
       title: "Netflix",
       description: "netflix clone",
       imgUrl: projImg1,
+      Url:"https://netflix-clone-777cb.firebaseapp.com/"
     },
     {
       title: "Applicant Tracking System",
       description: "An applicant tracking system simplifies most of the modern recruiting process for TA teams by using automated intelligence to screen for the best, most qualified ",
       imgUrl: projImg2,
+      Url:"https://github.com/robel16/Applicant_tracking_system"
     },
     {
       title: "Face Recognition Attendance system",
       description: "Facial recognition attendance system is a biometric identification method that uses a face-scanning mechanism to record attendance from everyone present in an organization. ",
       imgUrl: projImg3,
+      Url:"https://github.com/robel16/face_recognition_attendance_system"
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg4,
-    },
+
     
   ];
 
+   const projects2 = [
+    {
+    title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg4,
+      Url:"https://house-renting-coral.vercel.app/"
+    },
+  ]
   return (
     <section className="project" id="project">
       <Container>
@@ -82,11 +89,42 @@ useEffect(()=>{
                         }
                       </Row>
                     </Tab.Pane>
+                     <Tab.Pane eventKey="second">
+                      <Row>
+                        {
+                          projects2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                    </Tab.Pane>
                     <Tab.Pane eventKey="section">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <div style={{display:"flex", alignItems:"center",paddingLeft:"25%"}}>
+                         <h1 style={{margin:"10px",marginLeft:"10px"}}>MORE ARE COMING SOON    </h1>
+
+<Hourglass
+  visible={true}
+  height="80"
+  width="80"
+  ariaLabel="hourglass-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  colors={['#306cce', '#72a1ed']}
+  
+/>
+
+                      </div>
+                     
+
+                     
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

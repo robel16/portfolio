@@ -68,7 +68,11 @@ useEffect(()=>{
                  <span className={`${letterClass} _13`}>I'</span>
                  <span className={`${letterClass} _14`}>m</span>
                    <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15}/>  <span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p>Reliable Web Developer incorporates solid technical bases with
+creative user interface design. Combines aesthetic considerations with
+technical expertise to produce visually attractive and highly functional
+sites and web apps. Committed to providing visitors with smooth and
+pleasant interactions</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
