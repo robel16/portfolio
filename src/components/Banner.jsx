@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Web Developer", "Web Designer", "MERN Stack Developer" ];
   const period = 2000;
   const [letterClass,setLettrClass]=useState('text-animate')
   const nameArray=['','R','o','b','e','l',]
@@ -67,7 +67,7 @@ useEffect(()=>{
                  <br/> 
                  <span className={`${letterClass} _13`}>I'</span>
                  <span className={`${letterClass} _14`}>m</span>
-                   <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15}/>  <span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                   <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15}/>  <span className="txt-rotate" dataPeriod="2000" data-rotate='[ "Web Developer", "Web Designer", "MERN Stack Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Reliable Web Developer incorporates solid technical bases with
 creative user interface design. Combines aesthetic considerations with
 technical expertise to produce visually attractive and highly functional
