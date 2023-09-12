@@ -49,7 +49,10 @@ useEffect(()=>{
                     <div className="skill-bx wow zoomIn">
                         <h2>
                         <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15}/>  </h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                       <p>
+  I am a web developer with expertise in a variety of technologies including JavaScript (both client-side and server-side with Node.js), React for building dynamic user interfaces, Git for version control, MongoDB for database management, Express.js for building web applications, and I'm also proficient in using the Tailwind CSS framework for creating stylish and responsive designs. I have experience working with other libraries and frameworks to create robust and efficient web applications. I'm passionate about creating web solutions that are both functional and user-friendly.
+</p>
+
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />

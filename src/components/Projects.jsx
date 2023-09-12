@@ -20,11 +20,11 @@ useEffect(()=>{
 },[])
 
   const projects = [
-    {
-      title: "Netflix",
-      description: "netflix clone",
-      imgUrl: projImg1,
-      Url:"https://netflix-clone-777cb.firebaseapp.com/"
+   {
+    title: "GHRS",
+      description: "A guest house renting system is a software or web-based platform that allows property owners or managers to rent out their guest houses, vacation rentals, or similar accommodations to travelers or guests.",
+      imgUrl: projImg4,
+      Url:"https://house-renting-coral.vercel.app/"
     },
     {
       title: "Applicant Tracking System",
@@ -43,12 +43,13 @@ useEffect(()=>{
   ];
 
    const projects2 = [
-    {
-    title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg4,
-      Url:"https://house-renting-coral.vercel.app/"
+     {
+      title: "Netflix",
+      description: "netflix clone",
+      imgUrl: projImg1,
+      Url:"https://netflix-clone-777cb.firebaseapp.com/"
     },
+    
   ]
   return (
     <section className="project" id="project">
@@ -61,7 +62,8 @@ useEffect(()=>{
                 <h2>
                 <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15}/>
                 </h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>In my journey as a web developer, I've had the privilege of working on a diverse range of projects, each showcasing my proficiency in various frameworks and technologies. 
+                  These projects are a testament to my commitment to building innovative and user-friendly web solutions. Here are some highlights:</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -104,7 +106,7 @@ useEffect(()=>{
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <div style={{display:"flex", alignItems:"center",paddingLeft:"25%"}}>
