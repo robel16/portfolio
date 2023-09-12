@@ -9,6 +9,7 @@ import colorSharp from "../assets/img/color-sharp.png"
 import AnimatedLetters from "./AnimatedLetters/Animated";
 import { useEffect, useState } from "react";
 import SkillAnimated from "./SkillAnimated/SkillAnimated";
+
 export const Skills = () => {
   const [letterClass,setLettrClass]=useState('text-animate')
   const nameArray=['','S','k','i','l','l','s']
@@ -55,12 +56,10 @@ useEffect(()=>{
                                 <h5>Web Development</h5>
                             </div>
                             <div className="item">
-                                
+                              <SkillAnimated/>
                             </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
-                            </div>
+                            
+                           
                             <div className="item">
                                 <img src={meter1} alt="Image" />
                                 <h5>Web Development</h5>
