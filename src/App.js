@@ -7,7 +7,7 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import SkillAnimated from './components/SkillAnimated/SkillAnimated';
-
+import Certification from './components/Certification'
 
 function App() {
   return (
@@ -15,7 +15,9 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
+ <Certification/>
       <Projects />
+       
       <Contact />
    
     </div>
