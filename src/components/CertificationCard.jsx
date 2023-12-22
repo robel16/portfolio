@@ -1,16 +1,16 @@
 
 import React from 'react';
 
-const CertificationCard = ({ title, description, imgUrl, Url }) => {
+const CertificationCard = ({ imgUrl, Title }) => {
   return (
-    <div className="certification-card">
-      <img src={imgUrl} alt={title} />
-      <h5>{title}</h5>
-      <p>{description}</p>
-      <a href={Url} target="_blank" rel="noopener noreferrer">
-        View Certification
-      </a>
-    </div>
+    <Col size={12} sm={6} md={4}>
+      <div className="proj-imgbx" onClick={handleCardClick}>
+        <img src={imgUrl} alt={Title} />
+        <div className="proj-txtx">
+          <h4>{Title}</h4>
+        </div>
+      </div>
+    </Col>
   );
 };
 
