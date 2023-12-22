@@ -1,4 +1,4 @@
-import Cert1 from "../assets/certification/Introtofrontend.jpg";
+import Cert1 from "../assets/certification/intro.jpg";
 import cert2 from "../assets/certification/ReactBasic.jpg";
 import cert3 from "../assets/certification/JS.jpg";
 import cert4 from "../assets/certification/Rjsudemy.jpg";
@@ -92,7 +92,7 @@ export const Certification = () => {
                 infinite={true}
                 className="owl-carousel owl-theme certificate-slider"
               >
-             <div className="certificate">
+             <div className="item">
                                 <img src={Cert1} alt="Image" />
                                 <h5 >Introduction To Frontend</h5>
                             </div> 
