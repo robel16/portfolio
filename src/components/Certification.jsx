@@ -92,41 +92,41 @@ export const Certification = () => {
                 infinite={true}
                 className="owl-carousel owl-theme certificate-slider"
               >
-             <div className="item">
+             <div className="certificate">
                                 <img src={Cert1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5 >Introduction To Frontend</h5>
                             </div> 
                             <div className="item">
                                 <img src={cert2} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>Rect Basic</h5>
                             </div>
                             <div className="item">
                                 <img src={cert3} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>JavaScript by meta</h5>
                             </div>
                             <div className="item">
                                 <img src={cert4} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>React By Udemy</h5>
                             </div>
                             <div className="item">
                                 <img src={cert5} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>UI/UX</h5>
                             </div>
                             <div className="item">
                                 <img src={cert6} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>Version Control</h5>
                             </div>
                             <div className="item">
                                 <img src={cert7} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>HTML and CSS in Depth</h5>
                             </div>
                             <div className="item">
                                 <img src={cert8} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>JavaScript by Udemy</h5>
                             </div>
                             <div className="item">
                                 <img src={cert9} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>Python Flask Demostration</h5>
                             </div>
 
               </Carousel>
