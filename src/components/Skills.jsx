@@ -67,6 +67,7 @@ useEffect(()=>{
                                 <img src={meter1} alt="Image" />
                                 <h5>Web Development</h5>
                             </div>
+                            
                         </Carousel>
                     </div>
                 </div>

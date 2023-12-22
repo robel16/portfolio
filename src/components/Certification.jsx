@@ -1,22 +1,26 @@
 import Cert1 from "../assets/certification/Introtofrontend.jpg";
 import cert2 from "../assets/certification/ReactBasic.jpg";
-import cert3 from "../assets/certification/ReactBasic.jpg";
+import cert3 from "../assets/certification/JS.jpg";
+import cert4 from "../assets/certification/Rjsudemy.jpg";
+import cert5 from "../assets/certification//UIUX.jpg";
+import cert6 from "../assets/certification/VersionControl.jpg";
+import cert7 from "../assets/certification/htmlcssdepth.jpg";
+import cert8 from "../assets/certification/jsudemy.jpg";
+import cert9 from "../assets/certification/pythonandflask.jpg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+
 import colorSharp from "../assets/img/color-sharp.png";
 import AnimatedLetters from "./AnimatedLetters/Animated";
 import { useEffect, useState } from "react";
-import SkillAnimated from "./SkillAnimated/SkillAnimated";
-import CertificationCard from "./CertificationCard";
+
 export const Certification = () => {
   const certifications = [
     {
       title: "intro",
-      imageUrl: "../assets/certification/htmlcssdepth.jpg",
+      imageUrl: {Cert1},
     },
-    {
+      {
       title: "web",
       imageUrl: "../assets/certification/Introtofrontend.jpg",
     },
@@ -81,25 +85,50 @@ export const Certification = () => {
                   idx={15}
                 />{" "}
               </h2>
-              {/* <p>
-                I am a web developer with expertise in a variety of technologies
-                including JavaScript (both client-side and server-side with
-                Node.js), React for building dynamic user interfaces, Git for
-                version control, MongoDB for database management, Express.js for
-                building web applications, and I'm also proficient in using the
-                Tailwind CSS framework for creating stylish and responsive
-                designs. I have experience working with other libraries and
-                frameworks to create robust and efficient web applications. I'm
-                passionate about creating web solutions that are both functional
-                and user-friendly.
-              </p> */}
+             <p> this is my certification</p>
 
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme certificate-slider"
               >
-               
+             <div className="item">
+                                <img src={Cert1} alt="Image" />
+                                <h5>Web Development</h5>
+                            </div> 
+                            <div className="item">
+                                <img src={cert2} alt="Image" />
+                                <h5>Web Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={cert3} alt="Image" />
+                                <h5>Web Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={cert4} alt="Image" />
+                                <h5>Web Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={cert5} alt="Image" />
+                                <h5>Web Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={cert6} alt="Image" />
+                                <h5>Web Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={cert7} alt="Image" />
+                                <h5>Web Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={cert8} alt="Image" />
+                                <h5>Web Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={cert9} alt="Image" />
+                                <h5>Web Development</h5>
+                            </div>
+
               </Carousel>
             </div>
           </div>
